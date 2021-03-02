@@ -1,71 +1,85 @@
+$white: #ffffff;
+$black: #000000;
+$dark-blue: #2c3e5b;
+$light-grey: #f9f8f7;
+$extra-grey: #afaead;
+$grey: #8b8b8b;
+$green: #798760;
+
 header {
 	position: relative;
-    overflow: hidden;
 	width: 100%;
-	background: lightcyan;
+	background: $dark-blue;
 }
 
 .flex {
-	padding: 1rem 2rem;
 	user-select: none;
-	border-bottom: 1px solid black;
 	display: flex;
 	z-index: 1;
 	align-items: center;
-	overflow: hidden;
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.navigation-restraint {
+	padding: 1rem 1rem;
 }
 
 .site-nav {
 	position: absolute;
-	width: 10rem;
-	transition: right 0.4s ease-in-out;
-	z-index: -1;
+	width: 12rem;
+	transition: left 0.4s ease-in-out;
+	z-index: 1;
 	height: 100vh;
-	border-left: 1px solid;
-	background-color: lightblue;
-	z-index: -1;
-	height: 100vh;
-	right: -15rem;
+	background-color: $dark-blue;
+	left: -15rem;
 	top: 0;
 	padding-top: 93px;
 }
 
 .menu-icon {
 	width: 60px;
+    height: 60px;
 	display: block;
+	z-index: 2;
 	padding: 0.6rem;
+    fill: $white;
 }
 
 .logo {
 	margin-right: auto;
-	height: 40px;
+	width: 60px;
+    height: 60px;
+	padding: 0.6rem;
+	z-index: 999;
 }
 
-.logo img {
-	height: 40px;
-}
-
-.right {
-	right: 0;
-	/* transition: all 0.4s ease-out; */
+.logo svg {
+    fill: $extra-grey;
 }
 
 .nav-a {
-	color: #525252;
+    color: $white;
 	display: block;
 	padding: 1rem 0 1rem 0.4rem;
-}
-
-.nav-a:hover {
-	color: black;
-	background-color: lightcyan;
+	&:hover {
+		color: $grey;
+	}
 }
 
 .nav-list li {
-	border-bottom: 1px solid black;
+    border-bottom: 1px solid $light-grey;
+    text-transform: uppercase;
+	&:first-of-type {
+		border-top: 1px solid $light-grey;
+	}
 }
 
-@media (min-width: 820px) {
+.left {
+    left: 0;
+}
+
+@media (min-width: 1000px) {
   	.nav-list {
 		width: auto;
 		display: flex;
@@ -84,9 +98,8 @@ header {
 		width: auto;
 		transition: none;
 		border-left: none;
-		background-color: lightcyan;
 		height: auto;
-		right: auto;
+		left: auto;
 		top: auto;
 		padding: 0;
 		z-index: 0;
@@ -95,10 +108,17 @@ header {
 	.nav-list li {
 		border-bottom: none;
 		margin: 0rem 1rem;
+		&:first-of-type {
+			border-top: none;
+		}
 	}
 
-	.right {
+	.logo {
+		padding: 0;
+	}
+
+	.left {
 		transition: none;
-		right: 0rem;
+		left: 0rem;
 	}
 }
