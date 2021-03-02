@@ -1,0 +1,43 @@
+.form-git {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 30rem;
+}
+  
+label {
+    margin: 1.5rem 0 0.7rem 1rem;
+}
+  
+.name,
+.email,
+.message {
+    border: 1px #9a9aa0 solid;
+    border-radius: 0.25rem;
+    height: 2.5rem;
+}
+  
+.message {
+    height: 8rem;
+    margin-bottom: 1.5rem;
+}
+  
+.submit-button {
+    margin: 0 auto; 
+    width: 15rem;
+    height: 2.5rem;
+    background: #fb6470;
+	border: 1px solid #9a9aa0;
+    border-radius: 0.4rem;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+.footer-para {
+    margin-top: 0.3rem;
+    text-align: center;
+}
+  
+.footer-para-div {
+    margin: 3.5rem 0 2rem 0;
+}
