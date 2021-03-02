@@ -3,10 +3,10 @@ window.addEventListener("DOMContentLoaded", function(event) {
     const menuButton = document.querySelector(".menu-icon");
     
     menuButton.onclick = (e) => {
-        menu.classList.toggle("right");
+        menu.classList.toggle("left");
     }
 
     menu.onmouseleave = (e) => {
-        menu.classList.toggle('right');
-    }
+        menu.classList.toggle('left');
+    } 
 });
