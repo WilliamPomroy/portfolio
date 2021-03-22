@@ -1,0 +1,108 @@
+.hero-banner {
+    width: 100%;
+    height: 35rem;
+    background-color: black;
+}
+
+.slider,
+.hero-banner-image {
+    width: 100%;
+}
+
+.hero-banner-image {
+    height: 66%;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    opacity: 0.8;
+    height: 34%;
+    background-color: #494949;
+}
+
+.slider-frame {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -105%;
+    p {
+        color: white;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+.slider-frame-one {
+    animation: slide-one 15s linear infinite;
+}
+
+.slider-frame-two {
+    animation: slide-two 15s linear infinite;
+}
+
+.slider-frame-three {
+    animation: slide-three 15s linear infinite;
+}
+
+// 0% 0s, 6% 1s, 13% 2s, 20% 3s, 27% 4s, 33% 5s, 39% 6s, 46% 7s, 53% 8s, 60% 9s, 66% 10s, 72% 11s, 79% 12s, 86% 13s, 93% 14s, 100%
+
+@keyframes slide-one {
+    0% {top: 0;} // Start of Animation
+    6% {top: 0;} // 1 second in
+    27% {top: 0%;} // 4s
+    32% {opacity: 1;}
+    33% {top: 105%; opacity: 0;} // 5s
+    34% {top: -105%;} //Reset Position
+    93% {top: -105%;} // 14s
+    100% {top: 0;}
+}
+
+@keyframes slide-two {
+    0%  { top: -105%; }
+    27% {top: -105%;} // 4s
+    33% {top: 0;} // 5s
+    60% {top: 0%;} // 9s
+    65% {opacity: 1;}
+    66% {top: 105%; opacity: 0;} // 10s
+    67% {top: -105%;} // Reset Position
+}
+
+@keyframes slide-three {
+    0% {top: -105%;} // Reset Position
+    60% {top: -105%;} // 9s
+    66% {top: 0;} // 10s
+    93% {top: 0;} // 14s
+    99% {opacity: 1;}
+    100% {top: 105%; opacity: 0;} // 15s
+}
+
+@media(min-width:700px) {
+    .hero-banner {
+        height: 25rem;
+        display: flex;
+    }
+
+    .slider,
+    .hero-banner-image {
+        height: 100%;
+    }
+
+    .hero-banner-image {
+        width: 50%;
+    }
+    
+    .slider {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-banner-image {
+        width: 60%;
+    }
+    
+    .slider {
+        width: 40%;
+    }
+}

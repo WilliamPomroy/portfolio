@@ -19,6 +19,7 @@ label {
 .message {
     height: 8rem;
     margin-bottom: 1.5rem;
+	resize: none;
 }
   
 .submit-button {
@@ -31,6 +32,10 @@ label {
     color: white;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+	&:hover {
+		background-color: white;
+		color: #fb6470;
+	}
 }
   
 .copyright {
