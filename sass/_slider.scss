@@ -18,14 +18,14 @@
     overflow: hidden;
     opacity: 0.8;
     height: 34%;
-    background-color: #494949;
+    background: #49494970;
 }
 
 .slider-frame {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: -105%;
+    bottom: -105%;
     p {
         color: white;
         font-size: 2rem;
@@ -48,33 +48,33 @@
 // 0% 0s, 6% 1s, 13% 2s, 20% 3s, 27% 4s, 33% 5s, 39% 6s, 46% 7s, 53% 8s, 60% 9s, 66% 10s, 72% 11s, 79% 12s, 86% 13s, 93% 14s, 100%
 
 @keyframes slide-one {
-    0% {top: 0;} // Start of Animation
-    6% {top: 0;} // 1 second in
-    27% {top: 0%;} // 4s
+    0% {bottom: 0;} // Start of Animation
+    6% {bottom: 0;} // 1 second in
+    27% {bottom: 0%;} // 4s
     32% {opacity: 1;}
-    33% {top: 105%; opacity: 0;} // 5s
-    34% {top: -105%;} //Reset Position
-    93% {top: -105%;} // 14s
-    100% {top: 0;}
+    33% {bottom: 105%; opacity: 0;} // 5s
+    34% {bottom: -105%;} //Reset Position
+    93% {bottom: -105%;} // 14s
+    100% {bottom: 0;}
 }
 
 @keyframes slide-two {
-    0%  { top: -105%; }
-    27% {top: -105%;} // 4s
-    33% {top: 0;} // 5s
-    60% {top: 0%;} // 9s
+    0%  { bottom: -105%; }
+    27% {bottom: -105%;} // 4s
+    33% {bottom: 0;} // 5s
+    60% {bottom: 0%;} // 9s
     65% {opacity: 1;}
-    66% {top: 105%; opacity: 0;} // 10s
-    67% {top: -105%;} // Reset Position
+    66% {bottom: 105%; opacity: 0;} // 10s
+    67% {bottom: -105%;} // Reset Position
 }
 
 @keyframes slide-three {
-    0% {top: -105%;} // Reset Position
-    60% {top: -105%;} // 9s
-    66% {top: 0;} // 10s
-    93% {top: 0;} // 14s
+    0% {bottom: -105%;} // Reset Position
+    60% {bottom: -105%;} // 9s
+    66% {bottom: 0;} // 10s
+    93% {bottom: 0;} // 14s
     99% {opacity: 1;}
-    100% {top: 105%; opacity: 0;} // 15s
+    100% {bottom: 105%; opacity: 0;} // 15s
 }
 
 @media(min-width:700px) {
