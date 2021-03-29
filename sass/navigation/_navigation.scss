@@ -1,15 +1,7 @@
-$white: #ffffff;
-$black: #000000;
-$dark-blue: #2c3e5b;
-$light-grey: #f9f8f7;
-$extra-grey: #afaead;
-$grey: #8b8b8b;
-$green: #798760;
-
 header {
 	position: relative;
 	width: 100%;
-	background: $dark-blue;
+	background: $white;
 }
 
 .flex {
@@ -31,7 +23,7 @@ header {
 	transition: left 0.4s ease-in-out;
 	z-index: 1;
 	height: 100vh;
-	background-color: $dark-blue;
+	background-color: $white;
 	left: -15rem;
 	top: 0;
 	padding-top: 93px;
@@ -40,19 +32,20 @@ header {
 /* Toggle Icon Styles and Animation */ 
 .toggle-icon {
     opacity: 1;
-    z-index: 1;
+    z-index: 999;
     position: relative;
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
+	margin-right: 1rem;
 }
 
 .toggle-icon span {
     display: block;
     width: 2.5rem;
     height: 0.3125rem;
-    background-color: $orange;
+    background-color: #000;
     display: block;
     border-radius: 2px;
     transition: all 0.2s ease-in-out;
@@ -82,10 +75,18 @@ header {
     transform: rotate(135deg);
 }
 
+// .toggle-icon.open span:nth-of-type(2) {
+//     position: absolute;
+//     left: -1.25rem;
+//     opacity: 0;
+// }
+
 .toggle-icon.open span:nth-of-type(2) {
-    position: absolute;
-    left: -1.25rem;
-    opacity: 0;
+	top: 1.25rem;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .toggle-icon.open span:nth-of-type(3) {
@@ -105,24 +106,20 @@ header {
 	z-index: 999;
 }
 
-.logo svg {
-    fill: $extra-grey;
-}
-
 .nav-a {
-    color: $white;
+    color: $black;
 	display: block;
 	padding: 1rem 0 1rem 0.4rem;
 	&:hover {
-		color: $grey;
+		color: #d6d6d6;
 	}
 }
 
 .nav-list li {
-    border-bottom: 1px solid $light-grey;
+    border-bottom: 1px solid #d6d6d6;
     text-transform: uppercase;
 	&:first-of-type {
-		border-top: 1px solid $light-grey;
+		border-top: 1px solid #d6d6d6;
 	}
 }
 
@@ -131,6 +128,11 @@ header {
 }
 
 @media (min-width: 1000px) {
+
+	.toggle-icon {
+		display: none;
+	}
+
   	.nav-list {
 		width: auto;
 		display: flex;
