@@ -62,8 +62,8 @@
 
 .slider-frame-one {
     animation: slide-one 15s linear infinite;
-    text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     p {
