@@ -1,0 +1,114 @@
+.portfolio {
+    background: #75A190;
+    background: linear-gradient(145deg, #75A190, #2f6652);
+    padding: 1.5rem 2rem;
+
+    // #3c725e,
+    .btn {
+        margin-top: 1.5rem;
+    }
+}
+
+.portfolio-pieces {
+    display: flex;
+    align-items: center;
+    svg {
+        transition: 0.5s;
+        max-width: 20rem;
+        margin: 0 auto;
+    }
+}
+
+.folder-open {
+    transform: rotateY(20deg);
+}
+
+.class-5,
+.class-6 {
+    transition: 0.5s;
+}
+
+@media (min-width: 600px) {
+
+    .portfolio {
+        .btn {
+            margin: 0 auto;
+        }
+    }
+
+    .portfolio-pieces {
+        svg {
+            transform: rotate(-90deg);
+        }
+    }
+
+    // .portfolio-pieces {
+    //     display: grid;
+    //     grid-template-rows: 3rem repeat(4, 1fr) 3rem;
+    //     grid-template-columns: 3rem repeat(6, 1fr) 3rem;
+    //     gap: 0.5rem;
+    //     width: 580px;
+    //     margin: 0 auto 1.5rem;
+    // }
+
+    // .gallery-image,
+    // .culinary-image,
+    // .letters-image,
+    // .api-call-image {
+    //     width: 10rem;
+    // }
+
+    // .gallery-image {
+    //     margin-top: auto;
+    //     grid-column: 1 / span 5;
+    //     grid-row: span 3 / -1;
+    // }
+
+    // .culinary-image {
+    //     grid-column: span 2 / -2;
+    //     grid-row: span 2 / -1;
+    //     margin-top: 1rem;
+    // }
+
+    // .letters-image {
+    //     grid-column: span 5 / -1;
+    //     grid-row: 1 / span 3;
+    // }
+
+    // .api-call-image {
+    //     grid-column: 3 / span 4;
+    //     grid-row: 2 / span 4;
+    // }
+
+    // .gallery-image {
+    //     position: absolute;
+    //     width: 20rem; 
+    //     bottom: 0;
+    //     left: 0;
+    // }
+
+    // .culinary-image {
+    //     position: absolute;
+    //     width: 10rem;
+    //     bottom: 1rem;
+    //     right: 4rem;
+    // }
+
+    // .letters-image {
+    //     position: absolute;
+    //     width: 18rem;
+    //     top: 0;
+    //     right: 0;
+    // }
+
+    // .api-call-image {
+    //     position: absolute;
+    //     width: 15rem;
+    //     bottom: 3rem;
+    //     left: 25%;
+    // }
+}
+
+@media (min-width: 950px) {
+    
+}

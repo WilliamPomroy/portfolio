@@ -1,17 +1,18 @@
 .skills {
     width: 90%;
     margin: 1.5rem auto;
-    max-width: 1200px; 
+    max-width: 1000px; 
 }
 
 @media (min-width: 800px) {
     .skills {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .information,
     .progress-bars {
-        width: 47%;
+        width: 48%;
     }
 }

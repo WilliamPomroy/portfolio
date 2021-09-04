@@ -21,7 +21,8 @@
     position: relative;
     overflow: hidden;
     height: 100%;
-    background: #494949c2;
+    // background: #494949c2;
+    background: #2f6652bf;
     user-select: none;
     display: flex;
     justify-content: center;
@@ -103,11 +104,6 @@
     align-items: center;
 }
 
-.slider-frame-three {
-    animation: slide-three 15s linear infinite;
-    height: 100%;
-}
-
 // 0% 0s, 6% 1s, 13% 2s, 20% 3s, 27% 4s, 33% 5s, 39% 6s, 46% 7s, 53% 8s, 60% 9s, 66% 10s, 72% 11s, 79% 12s, 86% 13s, 93% 14s, 100%
 // 0% 0s, 10% 1s, 20% 2s, 30% 3s, 40% 4s, 50% 5s, 60% 6s, 70% 7s, 80% 8s, 90% 9s, 100% 10s
 @keyframes slide-one {
@@ -155,7 +151,9 @@
     
     .slider {
         width: 50%;
-        background: #49494970;
+        background: #2f6652a9;
+        // background: #49494990;
+        // background: #49494970;
     }
 }
 

@@ -9,6 +9,10 @@ body {
 	line-height: 1.5;
 }
 
+a {
+	font-family: 'Montserrat', sans-serif;
+}
+
 p {
     margin-bottom: 1rem;
 }
@@ -26,6 +30,7 @@ h1 {
 h2 {
 	font-size: clamp(1.728rem, 1vw, 2.369rem);
 	line-height: 3rem;
+	margin-bottom: 1.5rem;
 }
 
 h3 {
