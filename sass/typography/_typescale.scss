@@ -23,22 +23,32 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-	font-size: clamp(2.074rem, 1vw, 3.157rem);
+	font-size: clamp(2.074rem, 8vw, 3.157rem);
 	line-height: 3rem;
 }
 
 h2 {
-	font-size: clamp(1.728rem, 1vw, 2.369rem);
+	font-size: clamp(1.728rem, 8vw, 2.369rem);
 	line-height: 3rem;
 	margin-bottom: 1.5rem;
 }
 
 h3 {
-	font-size: clamp(1.44rem, 1vw, 1.777rem);
+	font-size: clamp(1.44rem, 8vw, 1.777rem);
 	line-height: 3rem;
 }
 
 h4 {
-	font-size: clamp(1.2rem, 1vw, 1.333rem);
+	font-size: clamp(1.2rem, 8vw, 1.333rem);
 	line-height: 1.5rem;
+}
+
+@media (min-width: 500px) {
+	h1 {
+		line-height: 4.5rem;
+	}
+
+	h2 {
+		line-height: 3rem;
+	}
 }

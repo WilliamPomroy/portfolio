@@ -1,5 +1,5 @@
 .skills {
-    width: 90%;
+    width: calc(100% - 4rem);
     margin: 1.5rem auto;
     max-width: 1000px; 
 }
@@ -11,8 +11,16 @@
         align-items: center;
     }
 
-    .information,
+    // .information,
+    // .progress-bars {
+    //     width: 48%;
+    // }
+
+    .information {
+        width: 40%;
+    }
+
     .progress-bars {
-        width: 48%;
+        width: 55%;
     }
 }

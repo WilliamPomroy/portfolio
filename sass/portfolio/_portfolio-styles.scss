@@ -1,0 +1,46 @@
+.portfolio-body-content {
+    width: calc(100% - 1.5rem);
+    margin: 1.5rem auto;
+    max-width: 1000px;
+}
+
+.portfolio-interest {
+    position: relative;
+    height: 20rem;
+    background: linear-gradient(145deg, #75A190, #2f6652);
+    h1 {
+        text-align: center;
+        padding-top: 6rem;
+        color: white;
+    }
+}
+
+// Banner SVG
+.custom-shape-divider-bottom-1630795871 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1630795871 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 103px;
+}
+
+.custom-shape-divider-bottom-1630795871 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1630795871 svg {
+        width: calc(180% + 1.3px);
+        height: 100px;
+    }
+}
