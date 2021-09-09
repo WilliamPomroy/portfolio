@@ -24,3 +24,20 @@ portBtn.addEventListener('mouseleave', () => {
     folder.classList.toggle('folder-open');
     shadow.classList.toggle('folder-open');
 });
+
+// Detect Browser for Webp as a background image
+// Detect Safari
+// let safariAgent = userAgentString.indexOf("Safari") > -1;
+  
+// Discard Safari since it also matches Chrome
+// if ((chromeAgent) && (safariAgent)) safariAgent = false;
+
+// console.log(safariAgent);
+
+var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+var is_chrome = navigator.userAgent.indexOf("Chrome") > -1;
+
+if ((is_chrome) && (is_safari)) is_safari = false;
+
+console.log(is_safari);
+console.log(window.navigator.userAgent);
