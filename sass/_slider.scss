@@ -1,14 +1,15 @@
 .hero-banner {
     width: 100%;
     height: 20rem;
-    background-size: cover;
 }
 
 .webp .hero-banner {
     background: url(../img/background-small.webp) no-repeat center;
+    background-size: cover;
 }
 .no-webp .hero-banner {
     background: url(../img/background-small.jpeg) no-repeat center;
+    background-size: cover;
 }
 
 .slider,
@@ -142,9 +143,11 @@
 
     .webp .hero-banner {
         background: url(../img/background-large.webp) no-repeat center;
+        background-size: cover;
     }
     .no-webp .hero-banner {
         background: url(../img/background-large.jpeg) no-repeat center;
+        background-size: cover;
     }
 
     .slider-brands {

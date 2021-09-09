@@ -38,6 +38,10 @@ var is_safari = navigator.userAgent.indexOf("Safari") > -1;
 var is_chrome = navigator.userAgent.indexOf("Chrome") > -1;
 var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
 
+console.log(is_safari);
+console.log(is_explorer);
+console.log(is_chrome);
+
 if ((is_chrome) && (is_safari)) is_safari = false;
 
 const body = document.querySelector('body');
