@@ -36,8 +36,14 @@ portBtn.addEventListener('mouseleave', () => {
 
 var is_safari = navigator.userAgent.indexOf("Safari") > -1;
 var is_chrome = navigator.userAgent.indexOf("Chrome") > -1;
+var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
 
 if ((is_chrome) && (is_safari)) is_safari = false;
 
-console.log(is_safari);
-console.log(window.navigator.userAgent);
+const body = document.querySelector('body');
+
+if (is_safari == true || is_explorer == true) {
+    body.classList.add('no-webp');
+} else {
+    body.classList.add('webp');
+}
