@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>William Pomroy - UI/UX and Front-end Developer</title>
+        <title>William Pomroy - API Stock App</title>
         <meta name="description" content="Edmonton Based UI/UX and Web Design and Development">
         <meta name="keywords" content="UI/UX Web Development Usability Front-end Edmonton">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,9 +37,13 @@
             
             <div class="display-container">
                 <a class="return-btn" href="../portfolio.html">🠔 Return</a>
-                <div class="display-single-container">
+                <div class="display-code-container">
                     <div class="info-box">
-                        <p>An app for checking the opening, closing daily high and low for a submitted stock over the last 5 open days. Displaying the opening, closing daily high and low, Price change in dollar amount and Percent change.</p>
+                        <p>School Project on working with API keys. Taking a text input for a stock and retrieving the data from Alpha Vantage.</p>
+                    </div>
+                    <div class="code-description">
+                        <p>An app for checking the daily stats of the last/current open day for a searched stock. With the option to hit a button and get the  opening, closing, daily high and daily low for the last 5 open days and the dates the information is from.</p>
+                        <p>Made in an object with the different features being contained within there own function with seperate API call requests to retrieve the appropriate data. Using Fetch calls, json, Objects, mapping and slicing. The app is also using Handlebars templates to layout the retrieved information.</p>
                     </div>
                     <pre>
                         <code class="language-js">
@@ -108,16 +112,14 @@
                             });
                         </code>
                     </pre> 
-                    <div>
-                        <p></p>
-                    </div>
                 </div>
+            </div>
         <footer>
             <div class="copyright-div">
                 <p class="copyright small-txt">© William Pomroy 2021, All rights reserved</p>
             </div>
         </footer>
-        <script src="js/main.js"></script>
+        <!-- <script src="js/main.js"></script> -->
         <script src="prism/prism.js"></script>
     </body>
 </html>

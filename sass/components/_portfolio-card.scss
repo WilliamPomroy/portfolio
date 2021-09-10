@@ -11,16 +11,22 @@
 .portfolio-card {
     display: block;
     border-top-left-radius: 2rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
     overflow: hidden;
-    position: relative;
-    width: 280px;
-    height: 280px;
+    width: 300px;
     box-shadow: 0rem 0rem 0.7rem darkgrey;
     margin: 0 auto;
     &:hover img {
         transform: scale(1.1);
     }
 
+    div.card-image {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
     img {
         transition: 0.3s;
     }
@@ -36,23 +42,69 @@
 }
 
 .portfolio-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 280px;
     height: 7rem;
-    background-color: rgba(169, 169, 169, 0.6);
-    padding: 1rem;
+    // background-color: #75A190;
+    // background: linear-gradient(145deg, #75A190, #2f6652);
+    // background-color: grey;
+    background-color: rgb(74, 74, 74);
+    padding: 0.5rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    color: white;
+    // justify-content: center;
+}
+
+.api-card-background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(128, 128, 128, 0.50);
+    top: 0;
+    .api-card-text {
+        font-size: 3rem;
+        margin: 0;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: font-size 0.3s;
+        color: white;
+    }
+    &:hover .api-card-text {
+        font-size: 3.5rem;
+    }
 }
 
 @media (min-width: 650px) {
     .portfolio-body-content h1 {
         text-align: left;
         margin-left: 1rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .portfolio-container {
+        .portfolio-card:nth-of-type(2n) {
+            margin-left: 0;
+        }
+        .portfolio-card:nth-of-type(2n+1) {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (min-width: 956px) {
+    .portfolio-container {
+        .portfolio-card:nth-of-type(2n) {
+            margin-left: auto;
+        }
+        .portfolio-card:nth-of-type(2n+1) {
+            margin-right: auto;
+        }
     }
 }
 
