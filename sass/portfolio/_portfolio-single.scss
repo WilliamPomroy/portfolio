@@ -104,16 +104,14 @@
     .desc {
         display: flex;
         justify-content: space-between;
-        p, .width {
-            width: 45%;
-        }
         .width {
+            width: 45%;
             margin-top: 0;
             height: fit-content;
         }
     }
     .desc-even {
-        p {
+        div.width {
             order: 2;
         }
     }
